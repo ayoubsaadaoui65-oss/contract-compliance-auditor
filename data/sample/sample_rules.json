@@ -1,0 +1,30 @@
+[
+  {
+    "rule_id": "FIN-01",
+    "category": "Payment Terms",
+    "rule_name": "Standard Net 30 Payment Window",
+    "requirement": "Invoices must be payable within 30 days (Net 30) or longer. Payment windows shorter than 30 days (such as Net 15 or due upon receipt) violate company cash-flow policy.",
+    "search_keywords": ["payment", "invoice", "Net 30", "Net 15", "days", "fees"]
+  },
+  {
+    "rule_id": "LIA-01",
+    "category": "Liability",
+    "rule_name": "Mutual Cap on Direct Damages",
+    "requirement": "Total aggregate liability must be capped (typically at 12 months of fees paid). Unlimited liability for general breach of contract is a FAIL.",
+    "search_keywords": ["liability", "limitation of liability", "aggregate", "damages", "cap"]
+  },
+  {
+    "rule_id": "TRM-01",
+    "category": "Termination & Renewal",
+    "rule_name": "Auto-Renewal Opt-Out Notice",
+    "requirement": "If the contract automatically renews, the customer must be allowed to cancel with no more than 30 to 60 days written notice prior to renewal.",
+    "search_keywords": ["renewal", "auto-renew", "termination", "notice", "term"]
+  },
+  {
+    "rule_id": "SEC-01",
+    "category": "Data Privacy & Security",
+    "rule_name": "Breach Notification Timeline",
+    "requirement": "Vendor must notify the customer of any security breach or unauthorized data access within 72 hours (or 3 business days) of discovery.",
+    "search_keywords": ["security", "breach", "notification", "data protection", "unauthorized"]
+  }
+]
