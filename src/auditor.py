@@ -65,7 +65,7 @@ class ContractAuditor:
 - Rule ID: {rule.rule_id}
 - Rule Name: {rule.rule_name}
 - Category: {rule.category}
-- Severity if Violated: {rule.severity}
+- Severity if Violated: {getattr(rule, "severity", "Standard")}
 - Mandatory Requirement: {rule.requirement}
 
 ### RETRIEVED CONTRACT EXCERPTS
