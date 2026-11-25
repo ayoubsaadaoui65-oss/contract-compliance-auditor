@@ -50,3 +50,12 @@ class AuditReportItem(BaseModel):
     """Combines the input rule with the LLM's evaluation for final display/export."""
     rule: ComplianceRule
     evaluation: ClauseEvaluation
+
+class ContractAuditReport(BaseModel):
+    """Aggregated compliance audit report across all rules for a single contract."""
+    contract_filename: str
+    total_rules: int
+    passed_count: int
+    failed_count: int
+    missing_count: int
+    evaluations: list[ClauseEvaluation]
